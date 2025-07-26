@@ -1,48 +1,69 @@
-# 🎨 Responsive Portfolio Website
+Website Portfolio | Rasya Akbar Muhammad Zein!
 
-Ini adalah proyek website portofolio pribadi yang dibangun hanya menggunakan **HTML, CSS, dan JavaScript**. Website ini memiliki desain yang modern, responsif untuk berbagai perangkat, serta sistem filtering portofolio yang interaktif.
+Ini adalah website portfolio pribadi yang dirancang untuk menampilkan proyek-proyek, keterampilan, dan informasi tentang saya sebagai seorang Frontend Developer. Website ini dibangun dengan fokus pada desain yang bersih, responsif, dan pengalaman pengguna yang intuitif.
 
-## 🖼️ Preview
+Fitur Utama
+Desain Responsif: Tampilan yang optimal di berbagai perangkat, dari desktop hingga mobile.
 
-Tampilan web di berbagai perangkat (mobile, tablet, desktop) mengikuti prinsip desain responsive. Portofolio ditampilkan dalam grid yang fleksibel dan bisa difilter berdasarkan kategori seperti _Designing_ dan _Photography_.
+Navigasi Hamburger (Mobile & Desktop): Menu slide-out yang modern dan fungsional, dapat diakses melalui ikon hamburger di semua ukuran layar.
 
----
+Efek Smooth Scroll: Transisi gulir yang halus antar bagian halaman.
 
-## 🚀 Fitur Utama
+Filter Proyek: Kemampuan untuk memfilter proyek berdasarkan kategori (Desain, Fotografi).
 
-- ✅ Landing page dengan nama, headline, dan tombol CTA
-- ✅ Section tentang diri (`About`)
-- ✅ Section keterampilan (`Skills`)
-- ✅ Section portofolio dengan **filter berdasarkan kategori**
-- ✅ Section kontak dengan form dan **notifikasi pesan berhasil terkirim**
-- ✅ Animasi transisi halus dan interaksi hover
-- ✅ Desain responsif untuk semua ukuran layar
-- ✅ Tidak menggunakan framework eksternal (murni HTML, CSS, JS)
+Halaman Detail Proyek: Setiap proyek memiliki halaman detail terpisah yang menampilkan gambar dan deskripsi lengkap.
 
----
+Formulir Kontak: Cara mudah bagi pengunjung untuk menghubungi saya.
 
-## 🧾 Struktur Folder
-project-folder/
-│
-├── index.html # File utama HTML
-├── style.css # Styling CSS
-├── script.js # JavaScript untuk interaksi & filter
-├── /images # Folder gambar (foto profil & portofolio)
-│ ├── 1.jpg
-│ ├── 2.jpg
-│ └── ...
-└── README.md 
+Animasi CSS: Efek visual halus untuk meningkatkan pengalaman pengguna.
 
-## 🛠️ Teknologi yang Digunakan
+Teknologi yang Digunakan
+Frontend:
 
-- **HTML5** – Struktur dan konten halaman
-- **CSS3** – Styling, layout responsif, animasi
-- **JavaScript** – Interaktivitas, filtering, dan notifikasi form
+HTML5
 
----
+CSS3 (Kustom)
 
-## 📌 Cara Menjalankan
+JavaScript (ES6+)
 
-1. **Clone repositori ini** atau download sebagai ZIP:
-   ```bash
-   git clone https://github.com//PORTFOLIO-WEB.git
+Google Fonts (Poppins)
+
+Struktur Proyek
+.
+├── index.html              # Halaman beranda portfolio
+├── project-detail.html     # Halaman detail untuk setiap proyek
+├── style.css               # File CSS untuk styling keseluruhan website
+├── main.js                 # File JavaScript utama untuk fungsionalitas menu, scroll, dan 
+└── assets/                 # Folder untuk aset seperti gambar
+    └── img/
+        └── Img2-removebg-preview.png # Gambar profil
+        .....
+        .....
+
+Instalasi dan Pengaturan (Lokal)
+Untuk menjalankan website portfolio ini di lingkungan lokal Anda, ikuti langkah-langkah berikut:
+
+Kloning Repositori:
+
+git clone <https://github.com/MyrasYa/portfolio-web.>
+cd https://github.com/MyrasYa/portfolio-web.
+
+Buka di Browser:
+Karena ini adalah website statis, Anda cukup membuka file index.html langsung di browser web Anda.
+
+# Contoh di Linux/macOS
+open index.html
+# Contoh di Windows
+start index.html
+
+Atau, jika Anda menggunakan extension seperti Live Server di VS Code, Anda bisa membukanya melalui extension tersebut untuk pengalaman pengembangan yang lebih baik.
+
+Kontak
+Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan, peluang kolaborasi, atau sekadar ingin menyapa!
+
+LinkedIn: [https://www.linkedin.com/in/rasya-akbar-muhammad-zein-467093376]
+
+GitHub: [https://github.com/MyrasYa]
+
+Lisensi
+Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LICENSE untuk detail lebih lanjut.

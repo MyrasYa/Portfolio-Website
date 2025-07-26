@@ -1,132 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Rasya</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio | Rasya Akbar Muhammad Zein</title>
+    <!-- Memuat font Poppins dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Kustom Anda -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="container">
-      <a href="#" class="site-title">My Portfolio</a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <h2 class="greeting">Hi, I’m</h2>
-        <h1 class="name">Rasya Akbar</h1>
-        <p class="tagline">Frontend Developer | Passionate about clean code</p>
-        <div class="social-links-container">
-          <a href="https://github.com/MyrasYa"><img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub"></a>
-          <a href="https://www.linkedin.com/in/rasya-akbar-muhammad-zein-467093376"><img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"></a>
+    <header class="main-header">
+        <div class="container">
+            <a href="#home" class="site-title">Rasya Akbar</a>
+            <nav class="main-nav">
+                <!-- Navigasi desktop ini sekarang disembunyikan secara default oleh CSS -->
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About me</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link contact-button">Contact me</a></li>
+                </ul>
+                <!-- Tombol Menu Mobile (Hamburger) - Selalu terlihat di desktop dan mobile -->
+                <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Toggle mobile menu">
+                    <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
         </div>
-      </div>
-      <div class="profile-image-container">
-        <img src="assets/img/Img2-removebg-preview.png" alt="Profile" />
-      </div>
-    </div>
-  </section>
+        <!-- Overlay Navigasi Mobile -->
+        <div id="mobile-menu" class="mobile-nav-overlay">
+            <button id="close-mobile-menu" class="close-mobile-menu" aria-label="Close mobile menu">
+                <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="nav-link mobile-nav-item">About me</a></li>
+                <li><a href="#skills" class="nav-link mobile-nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-link mobile-nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-link mobile-nav-item contact-button">Contact me</a></li>
+            </ul>
+        </div>
+    </header>
 
-  <section id="about" class="about-section container">
-    <h2>About Me</h2>
-    <p>Halo! Saya merupakan pengembang front-end yang baru dan bersemangat, dengan minat yang tinggi dalam desain UI/UX dan memastikan interaksi pengguna yang intuitif dan menyenangkan. Saya memfokuskan diri pada membuat layar web yang visually atraktif, responsif, dan mudah digunakan, dengan ekspresi kreativitas saya dalam layout, typography, dan warna. Saya yakin bahwa bagaimana pengguna interaktif dengan sebuah situs web dapat mempengaruhi kinerja dan kepuasan mereka secara signifikan. Saya merasa bersyukur dengan peluang untuk belajar dan berkembang dalam dunia pengembangan web. Saya selalu berusaha untuk mengembangkan kemampuan saya dengan mengikuti perkembangan teknologi terbaru dan terbaik. Saya tetap berkomitment untuk menghabiskan waktu saya belajar dan mencari cara inovatif untuk menyelesaikan masalah. Pengalaman saya sebagai pemula ini tidak hanya membuat saya lebih baik sebagai pengembang, tetapi juga menjadikan saya sebagai orang yang terbuka terhadap ide-ide baru dan collaborasi dengan tim yang berbakat. Saya tetap berharap untuk mengembangkan proyek yang berkualitas tinggi dan berkontribusi positif di dunia teknologi.</p>
-  </section>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section animated-section">
+            <div class="hero-background-split"></div>
+            <div class="container hero-content-wrapper">
+                <div class="hero-content">
+                    <p class="greeting">Hi, I’m</p>
+                    <h1 class="name">Rasya Akbar Muhammad Zein</h1>
+                    <p class="tagline">Frontend Developer | Passionate about clean code</p>
+                    <div class="social-links-container">
+                        <a href="https://github.com/MyrasYa" target="_blank" class="social-icon-link"><img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub Icon" class="social-icon"></a>
+                        <a href="https://www.linkedin.com/in/rasya-akbar-muhammad-zein-467093376" target="_blank" class="social-icon-link"><img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn Icon" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="profile-image-container">
+                    <img src="assets/img/Img2-removebg-preview.png" alt="Profile" class="profile-image" />
+                </div>
+            </div>
+        </section>
 
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML5</li>
-      <li>Figma</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="about-section common-section animated-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">Halo! Saya merupakan pengembang front-end yang baru dan bersemangat, dengan minat yang tinggi dalam desain UI/UX dan memastikan interaksi pengguna yang intuitif dan menyenangkan. Saya memfokuskan diri pada membuat tampilan web yang visually atraktif, responsif, dan mudah digunakan, dengan ekspresi kreativitas saya dalam layout, typography, dan warna. Saya yakin bahwa bagaimana pengguna interaktif dengan sebuah situs web dapat mempengaruhi kinerja dan kepuasan mereka secara signifikan. Saya merasa bersyukur dengan peluang untuk belajar dan berkembang dalam dunia pengembangan web. Saya selalu berusaha untuk mengembangkan kemampuan saya dengan mengikuti perkembangan teknologi terbaru dan terbaik. Saya tetap berkomitment untuk menghabiskan waktu saya belajar dan mencari cara inovatif untuk menyelesaikan masalah. Pengalaman saya sebagai pemula ini tidak hanya membuat saya lebih baik sebagai pengembang, tetapi juga menjadikan saya sebagai orang yang terbuka terhadap ide-ide baru dan collaborasi dengan tim yang berbakat. Saya tetap berharap untuk mengembangkan proyek yang berkualitas tinggi dan berkontribusi positif di dunia teknologi.</p>
+            </div>
+        </section>
 
-  <section id="projects" class="container">
-  <h2>Projects</h2>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section common-section animated-section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-grid">
+                    <li class="skill-item">HTML5</li>
+                    <li class="skill-item">Figma</li>
+                    <li class="skill-item">Git & GitHub</li>
+                </ul>
+            </div>
+        </section>
 
-  <!-- Filter Buttons -->
-  <div class="portfolio-filter">
-    <button class="filter-btn active" data-category="all">All</button>
-    <button class="filter-btn" data-category="design">Design</button>
-    <button class="filter-btn" data-category="photography">Photography</button>
-  </div>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects-section common-section animated-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
 
-  <!-- Portfolio Items -->
-   <!-- Design -->
-  <div class="portfolio-grid">
-    <div class="portfolio-item" data-category="design">
-      <img src="assets/img/1.jpg" alt="Project 1" />
-      <h3>Hening Jiwa</h3>
-      <p>Jeda dari riuh dunia, sebuah undangan untuk menemukan kedamaian dalam keheningan diri, tempat pikiran dan perasaan menemukan ruang untuk bernapas.</p>
-      <span class="category-label">Design</span>
-    </div>
+                <!-- Filter Buttons -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="design">Design</button>
+                    <button class="filter-btn" data-category="photography">Photography</button>
+                </div>
 
-    <div class="portfolio-item" data-category="design">
-      <img src="assets/img/2.jpg" alt="Project 2" />
-      <h3> Bisikan Kehidupan di Dahan Dunia</h3>
-      <p>Kesederhanaan hidup, dimana ada sebuah bisikan tentang keberadaan yang tangguh dan harmonis di sudut alam semesta kita.</p>
-      <span class="category-label">Design</span>
-    </div>
+                <!-- Portfolio Items -->
+                <div class="portfolio-grid">
+                    <!-- Design -->
+                    <div class="portfolio-item" data-category="design">
+                        <img src="assets/img/1.jpg" alt="Project 1" class="portfolio-image" />
+                        <div class="portfolio-info">
+                            <h3>Hening Jiwa</h3>
+                            <p>Jeda dari riuh dunia, sebuah undangan untuk menemukan kedamaian dalam keheningan diri, tempat pikiran dan perasaan menemukan ruang untuk bernapas.</p>
+                            <span class="category-label">Design</span>
+                        </div>
+                    </div>
 
-    <div class="portfolio-item" data-category="design">
-      <img src="assets/img/3.jpg" alt="Project 2" />
-      <h3>Simfoni Malam di Atas Air</h3>
-      <p>Keheningan malam yang magis, di mana setiap riak dan kepakan sayap adalah bagian dari simfoni alam semesta.</p>
-      <span class="category-label">Design</span>
-    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="assets/img/2.jpg" alt="Project 2" class="portfolio-image" />
+                        <div class="portfolio-info">
+                            <h3>Simfoni Malam di Atas Air</h3>
+                            <p>Keheningan malam yang magis, di mana setiap riak dan kepakan sayap adalah bagian dari simfoni alam semesta.</p>
+                            <span class="category-label">Design</span>
+                        </div>
+                    </div>
 
-    <div class="portfolio-item" data-category="design">
-      <img src="assets/img/4.jpg" alt="Project 2" />
-      <h3>Suara Kebebasan</h3>
-      <p>Kebebasan adalah hak universal yang tak terpisahkan.</p>
-      <span class="category-label">Design</span>
-    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="assets/img/3.jpg" alt="Project 3" class="portfolio-image" />
+                        <div class="portfolio-info">
+                            <h3>Bisikan Kehidupan di Dahan Dunia</h3>
+                            <p>Kesederhanaan hidup, ialah sebuah bisikan tentang keberadaan yang tangguh dan harmonis di sudut alam semesta kita.</p>
+                            <span class="category-label">Design</span>
+                        </div>
+                    </div>
 
-<!-- phoptograph -->
-    <div class="portfolio-item" data-category="photography">
-      <img src="assets/img/1p.jpg" alt="Project 3" />
-      <h3>Keindahan Hutan Tropis</h3>
-      <p>Pemandangan luas hutan lebat di bawah langit biru cerah dengan awan putih, menampilkan kekayaan alam yang asri dan menenangkan</p>
-      <span class="category-label">Photography</span>
-    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="assets/img/4.jpg" alt="Project 4" class="portfolio-image" />
+                        <div class="portfolio-info">
+                            <h3>Suara Kebebasan</h3>
+                            <p>Kebebasan adalah hak universal yang tak terpisahkan.</p>
+                            <span class="category-label">Design</span>
+                        </div>
+                    </div>
 
-    <div class="portfolio-item" data-category="photography">
-      <img src="assets/img/2p.jpg" alt="Project 4" />
-      <h3>Hamparan Sawah di Bawah Langit Berawan</h3>
-      <p> Lanskap sawah yang baru dipanen dengan gumpalan awan dramatis di atasnya, di kejauhan terlihat siluet pegunungan yang menambah kedalaman pemandangan</p>
-      <span class="category-label">Photography</span>
-    </div>
-  </div>
-</section>
+                    <!-- Photography -->
+                    <div class="portfolio-item" data-category="photography">
+                        <img src="assets/img/1p.jpg" alt="Photography Project 1" class="portfolio-image" />
+                        <div class="portfolio-info">
+                            <h3>Keindahan Hutan Tropis</h3>
+                            <p>Pemandangan luas hutan lebat di bawah langit biru cerah dengan awan putih, menampilkan kekayaan alam yang asri dan menenangkan.</p>
+                            <span class="category-label">Photography</span>
+                        </div>
+                    </div>
 
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+                    <div class="portfolio-item" data-category="photography">
+                        <img src="assets/img/2p.jpg" alt="Photography Project 2" class="portfolio-image" />
+                        <div class="portfolio-info">
+                            <h3>Hamparan Sawah di Bawah Langit Berawan</h3>
+                            <p>Lanskap sawah yang baru dipanen dengan gumpalan awan dramatis di atasnya, di kejauhan terlihat siluet pegunungan yang menambah kedalaman pemandangan.</p>
+                            <span class="category-label">Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Rasya Akbar. All rights reserved.</p>
-  </footer>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section common-section animated-section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required class="form-input" />
+                    <input type="email" placeholder="Your Email" required class="form-input" />
+                    <textarea rows="5" placeholder="Your Message" class="form-textarea"></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-  <div id="notification" class="notification">Thank you! Your message has been sent.</div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Rasya Akbar. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <script src="main.js"></script>
+    <div id="notification" class="notification">Thank you! Your message has been sent.</div>
+
+    <script src="main.js"></script>
 </body>
 </html>
