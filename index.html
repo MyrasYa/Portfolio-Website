@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Rasya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="#" class="site-title">My Portfolio</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="greeting">Hi, I’m</h2>
+        <h1 class="name">Rasya Akbar</h1>
+        <p class="tagline">Frontend Developer | Passionate about clean code</p>
+        <div class="social-links-container">
+          <a href="https://github.com/MyrasYa"><img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/rasya-akbar-muhammad-zein-467093376"><img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <div class="profile-image-container">
+        <img src="assets/img/Img2-removebg-preview.png" alt="Profile" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section container">
+    <h2>About Me</h2>
+    <p>Halo! Saya merupakan pengembang front-end yang baru dan bersemangat, dengan minat yang tinggi dalam desain UI/UX dan memastikan interaksi pengguna yang intuitif dan menyenangkan. Saya memfokuskan diri pada membuat layar web yang visually atraktif, responsif, dan mudah digunakan, dengan ekspresi kreativitas saya dalam layout, typography, dan warna. Saya yakin bahwa bagaimana pengguna interaktif dengan sebuah situs web dapat mempengaruhi kinerja dan kepuasan mereka secara signifikan. Saya merasa bersyukur dengan peluang untuk belajar dan berkembang dalam dunia pengembangan web. Saya selalu berusaha untuk mengembangkan kemampuan saya dengan mengikuti perkembangan teknologi terbaru dan terbaik. Saya tetap berkomitment untuk menghabiskan waktu saya belajar dan mencari cara inovatif untuk menyelesaikan masalah. Pengalaman saya sebagai pemula ini tidak hanya membuat saya lebih baik sebagai pengembang, tetapi juga menjadikan saya sebagai orang yang terbuka terhadap ide-ide baru dan collaborasi dengan tim yang berbakat. Saya tetap berharap untuk mengembangkan proyek yang berkualitas tinggi dan berkontribusi positif di dunia teknologi.</p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>Figma</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container">
+  <h2>Projects</h2>
+
+  <!-- Filter Buttons -->
+  <div class="portfolio-filter">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="design">Design</button>
+    <button class="filter-btn" data-category="photography">Photography</button>
+  </div>
+
+  <!-- Portfolio Items -->
+   <!-- Design -->
+  <div class="portfolio-grid">
+    <div class="portfolio-item" data-category="design">
+      <img src="assets/img/1.jpg" alt="Project 1" />
+      <h3>Hening Jiwa</h3>
+      <p>Jeda dari riuh dunia, sebuah undangan untuk menemukan kedamaian dalam keheningan diri, tempat pikiran dan perasaan menemukan ruang untuk bernapas.</p>
+      <span class="category-label">Design</span>
+    </div>
+
+    <div class="portfolio-item" data-category="design">
+      <img src="assets/img/2.jpg" alt="Project 2" />
+      <h3> Bisikan Kehidupan di Dahan Dunia</h3>
+      <p>Kesederhanaan hidup, dimana ada sebuah bisikan tentang keberadaan yang tangguh dan harmonis di sudut alam semesta kita.</p>
+      <span class="category-label">Design</span>
+    </div>
+
+    <div class="portfolio-item" data-category="design">
+      <img src="assets/img/3.jpg" alt="Project 2" />
+      <h3>Simfoni Malam di Atas Air</h3>
+      <p>Keheningan malam yang magis, di mana setiap riak dan kepakan sayap adalah bagian dari simfoni alam semesta.</p>
+      <span class="category-label">Design</span>
+    </div>
+
+    <div class="portfolio-item" data-category="design">
+      <img src="assets/img/4.jpg" alt="Project 2" />
+      <h3>Suara Kebebasan</h3>
+      <p>Kebebasan adalah hak universal yang tak terpisahkan.</p>
+      <span class="category-label">Design</span>
+    </div>
+
+<!-- phoptograph -->
+    <div class="portfolio-item" data-category="photography">
+      <img src="assets/img/1p.jpg" alt="Project 3" />
+      <h3>Keindahan Hutan Tropis</h3>
+      <p>Pemandangan luas hutan lebat di bawah langit biru cerah dengan awan putih, menampilkan kekayaan alam yang asri dan menenangkan</p>
+      <span class="category-label">Photography</span>
+    </div>
+
+    <div class="portfolio-item" data-category="photography">
+      <img src="assets/img/2p.jpg" alt="Project 4" />
+      <h3>Hamparan Sawah di Bawah Langit Berawan</h3>
+      <p> Lanskap sawah yang baru dipanen dengan gumpalan awan dramatis di atasnya, di kejauhan terlihat siluet pegunungan yang menambah kedalaman pemandangan</p>
+      <span class="category-label">Photography</span>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rasya Akbar. All rights reserved.</p>
+  </footer>
+
+  <div id="notification" class="notification">Thank you! Your message has been sent.</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
