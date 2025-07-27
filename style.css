@@ -140,18 +140,18 @@ body {
 .mobile-nav-overlay {
     position: fixed;
     top: 0rem; /* Adjusted: Push down from top, clear header */
-    right: -20%; /* Adjusted: Start from outside, match width, making it narrower */
-    width: 20%; /* Adjusted: Take up 20% of screen width (narrower) */
+    right: -60%; /* Adjusted: Start from outside, match width, making it narrower */
+    width: 50%; /* Adjusted: Take up 20% of screen width (narrower) */
     height: 100vh; /* Fill entire viewport height */
     background-color: rgba(0, 0, 0, 0.9); /* Latar belakang hitam semi-transparan */
     backdrop-filter: blur(15px); /* Efek blur yang kuat */
     z-index: 1050; /* Di atas header */
-    transition: right 0.4s ease-out; /* Animasi slide */
+    transition: right 0.8s ease-out; /* Animasi slide */
     display: flex; /* Keep flex for content alignment */
     flex-direction: column;
     justify-content: flex-start; /* Align content to the top of the overlay */
     align-items: flex-end; /* Align content to the right of the overlay */
-    padding: 2rem 1.5rem; /* Reverted to sensible padding */
+    padding: 2rem 2rem; /* Reverted to sensible padding */
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Shadow on the left edge of the overlay */
 }
 
@@ -559,7 +559,7 @@ body {
 @keyframes slideInBottom {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -568,7 +568,7 @@ body {
 }
 
 .animated-section {
-    animation: slideInBottom 1s ease-out forwards;
+    animation: slideInBottom 1.5s ease-out forwards;
     opacity: 0; /* Pastikan elemen tersembunyi sebelum animasi */
 }
 
@@ -627,24 +627,6 @@ body {
         margin-top: 1rem; /* Tambahkan margin atas di mobile */
     }
 
-    .image-caption {
-        right: 0.5rem;
-        bottom: 0.5rem;
-        font-size: 0.65rem;
-    }
-
-    .common-section {
-        padding: 3rem 0; /* Kurangi padding section di mobile */
-    }
-
-    .section-title {
-        font-size: 2rem; /* Ukuran judul section lebih kecil di mobile */
-    }
-
-    .about-section .about-text {
-        font-size: 1rem; /* Ukuran teks about lebih kecil di mobile */
-    }
-
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Sesuaikan grid skills */
         gap: 1rem;
@@ -659,24 +641,8 @@ body {
         grid-template-columns: 1fr; /* Satu kolom di mobile */
     }
 
-    .portfolio-card {
-        margin-bottom: 1.5rem; /* Jarak antar kartu portfolio */
-    }
-
     .portfolio-image {
-        height: 12rem; /* Sesuaikan tinggi gambar portfolio */
-    }
-
-    .portfolio-title {
-        font-size: 1.25rem;
-    }
-
-    .portfolio-description {
-        font-size: 0.9rem;
-    }
-
-    .contact-form {
-        padding: 1.5rem;
+        height: 30rem; /* Sesuaikan tinggi gambar portfolio */
     }
 
     .form-input,
