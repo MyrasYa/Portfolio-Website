@@ -20,13 +20,17 @@ Animasi CSS: Efek visual halus untuk meningkatkan pengalaman pengguna.
 Teknologi yang Digunakan
 Frontend:
 
-HTML5
+- HTML5
 
-CSS3 (Kustom)
+- CSS3 (Kustom)
 
-JavaScript (ES6+)
+- JavaScript (ES6+)
 
-Google Fonts (Poppins)
+- Google Fonts (Poppins)
+
+AI (untuk Ide Proyek):
+
+- Granite (melalui Replicate) - Digunakan untuk menghasilkan ide dan konsep desain awal untuk beberapa proyek yang ditampilkan.
 
 Struktur Proyek
 .
