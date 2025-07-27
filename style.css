@@ -63,7 +63,7 @@ body {
 }
 
 .site-title:hover {
-    color: #3b82f6; /* Tailwind blue-600 */
+    color: #ed2a2a; 
 }
 
 /* Main Navigation List - Sembunyikan secara default (desktop dan mobile) */
@@ -137,6 +137,11 @@ body {
     height: 1.8rem; /* 28.8px */
 }
 
+.mobile-menu-button .hamburger-icon:hover {
+    color: #c80808; 
+    border-radius: 0.5rem;
+}
+
 /* Mobile Navigation Overlay - Penyesuaian lebar dan posisi */
 .mobile-nav-overlay {
     position: fixed;
@@ -175,6 +180,11 @@ body {
     height: 2rem;
 }
 
+.close-mobile-menu:hover {
+    color: #c80808; 
+    border-radius: 0.5rem;
+}
+
 .mobile-nav-list {
     list-style: none;
     display: flex;
@@ -195,7 +205,7 @@ body {
 }
 
 .mobile-nav-item:hover {
-    color: #c80808; /* Blue-600 */
+    color: #c80808; 
     border-radius: 0.5rem;
 }
 
@@ -255,7 +265,7 @@ body {
 
 .tagline {
     font-size: 1.75rem; /* 28px */
-    color: #3b82f6; /* Blue-600 */
+    color: #d75454; /* Blue-600 */
     font-weight: 600;
     margin-bottom: 1.75rem;
 }
@@ -364,7 +374,7 @@ body {
 }
 
 .skill-item {
-    background-color: #ffffff;
+    background-color: #fffcfc;
     padding: 1.5rem;
     text-align: center;
     border-radius: 0.75rem; /* 12px */
@@ -376,8 +386,8 @@ body {
 }
 
 .skill-item:hover {
-    background-color: #eff6ff; /* Blue-50 */
-    color: #2563eb; /* Blue-700 */
+    background-color: #000000;
+    color: #eb2525; 
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
@@ -406,7 +416,7 @@ body {
 }
 
 .filter-btn.active {
-    background-color: #3b82f6; /* Blue-600 */
+    background-color: #f63b3b; 
     color: white;
     box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
     transform: translateY(-2px);
@@ -500,14 +510,14 @@ body {
 .form-input:focus,
 .form-textarea:focus {
     outline: none;
-    border-color: #3b82f6; /* Blue-500 */
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25); /* Ring focus */
+    border-color: #f6413b; 
+    box-shadow: 0 0 0 3px rgba(245, 245, 245, 0.25); /* Ring focus */
 }
 
 .submit-button {
     padding: 1rem 2rem; /* 16px 32px */
-    background-color: #3b82f6; /* Blue-600 */
-    color: #fff;
+    background-color: #010101; 
+    color: #fffcfc;
     border: none;
     font-weight: 600;
     border-radius: 9999px; /* Full rounded */
@@ -518,7 +528,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #2563eb; /* Blue-700 */
+    background-color: #eb2525; /* Blue-700 */
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
 }
