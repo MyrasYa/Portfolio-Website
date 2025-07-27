@@ -674,3 +674,13 @@ body {
         margin-top: 1.5rem;
     }
 }
+
+/* Menghilangkan highlight biru saat mengetuk di mobile */
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Atau, jika ingin lebih spesifik untuk item navigasi mobile */
+.mobile-nav-item {
+    -webkit-tap-highlight-color: transparent;
+}
