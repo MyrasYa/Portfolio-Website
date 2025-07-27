@@ -35,7 +35,6 @@ AI (untuk Ide Proyek):
 Struktur Proyek
 .
 ├── index.html              # Halaman beranda portfolio
-├── project-detail.html     # Halaman detail untuk setiap proyek
 ├── style.css               # File CSS untuk styling keseluruhan website
 ├── main.js                 # File JavaScript utama untuk fungsionalitas menu, scroll, dan 
 └── assets/                 # Folder untuk aset seperti gambar
