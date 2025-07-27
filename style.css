@@ -186,15 +186,14 @@ body {
 .mobile-nav-item {
     text-decoration: none;
     color: #ffffff; /* Warna putih agar terlihat di latar belakang hitam */
-    font-size: 1rem; /* 24px */
+    font-size: 1.5rem; /* 24px */
     font-weight: 600;
     padding: 1.5rem 0rem;
     display: block; /* Ensure it takes full width for text-align to work */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.5s ease, color 0.3s ease;
 }
 
 .mobile-nav-item:hover {
-    background-color: transparent; /* Blue-50 */
     color: #c80808; /* Blue-600 */
     border-radius: 0.5rem;
 }
