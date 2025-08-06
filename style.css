@@ -251,7 +251,7 @@ body {
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 480px;
   color: #1f2937; /* Dark gray */
   text-align: left;
   margin-bottom: 2rem; /* Margin di mobile */
@@ -265,7 +265,7 @@ body {
 }
 
 .name {
-  font-size: 4.5rem; /* 72px */
+  font-size: 4.1rem; /* 72px */
   font-weight: 800; /* Extrabold */
   color: #1f2937; /* Dark gray */
   line-height: 1.1;
@@ -273,7 +273,7 @@ body {
 }
 
 .tagline {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.6rem; /* 28px */
   color: #d75454; /* Blue-600 */
   font-weight: 600;
   margin-bottom: 1.75rem;
@@ -615,8 +615,14 @@ body {
 /* Media query ini sekarang hanya akan menangani penyesuaian yang *berbeda* antara desktop dan mobile,
    karena banyak gaya mobile sekarang menjadi default untuk menu hamburger. */
 @media (max-width: 768px) {
-  /* Main nav list sudah disembunyikan secara default, jadi tidak perlu di sini */
-  /* Mobile menu button sudah ditampilkan secara default, jadi tidak perlu di sini */
+  /* Penyesuaian font-size untuk tablet */
+  .name {
+    font-size: 4rem; /* Lebih kecil dari desktop (4.5rem), lebih besar dari mobile (2.5rem) */
+  }
+
+  .tagline {
+    font-size: 1.5rem; /* Lebih kecil dari desktop (1.75rem), lebih besar dari mobile (1.1rem) */
+  }
 
   .hero-section {
     padding-top: 5rem; /* Sesuaikan padding atas di mobile */
@@ -637,15 +643,7 @@ body {
   }
 
   .greeting {
-    font-size: 1rem; /* Lebih kecil di mobile */
-  }
-
-  .name {
-    font-size: 3rem; /* Ukuran font lebih kecil di mobile */
-  }
-
-  .tagline {
-    font-size: 1.25rem; /* Ukuran font lebih kecil di mobile */
+    font-size: 1.5rem; /* Lebih kecil di mobile */
   }
 
   .social-links-container {
@@ -695,6 +693,7 @@ body {
 }
 
 @media (max-width: 480px) {
+  /* Penyesuaian font-size untuk ponsel */
   .name {
     font-size: 2.5rem;
   }
