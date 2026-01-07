@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Rasya Akbar Muhammad Zein</title>
-    <!-- Memuat font Poppins dari Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS Kustom Anda -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,7 +15,6 @@
       <div class="container">
         <a href="#home" class="site-title">Rasya Akbar</a>
         <nav class="main-nav">
-          <!-- Navigasi desktop ini sekarang disembunyikan secara default oleh CSS -->
           <ul class="nav-list">
             <li><a href="#about" class="nav-link">About me</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -26,7 +23,6 @@
               <a href="#contact" class="nav-link contact-button">Contact me</a>
             </li>
           </ul>
-          <!-- Tombol Menu Mobile (Hamburger) - Selalu terlihat di desktop dan mobile -->
           <button
             id="mobile-menu-button"
             class="mobile-menu-button"
@@ -49,7 +45,6 @@
           </button>
         </nav>
       </div>
-      <!-- Overlay Navigasi Mobile -->
       <div id="mobile-menu" class="mobile-nav-overlay">
         <button
           id="close-mobile-menu"
@@ -80,16 +75,13 @@
             <a href="#projects" class="nav-link mobile-nav-item">Projects</a>
           </li>
           <li>
-            <a href="#contact" class="nav-link mobile-nav-item contact-button"
-              >Contact me</a
-            >
+            <a href="#contact" class="nav-link mobile-nav-item contact-button">Contact me</a>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <!-- HERO SECTION -->
       <section id="home" class="hero-section animated-section">
         <div class="hero-background-split"></div>
         <div class="container hero-content-wrapper">
@@ -130,7 +122,6 @@
         </div>
       </section>
 
-      <!-- ABOUT ME SECTION -->
       <section id="about" class="about-section common-section animated-section">
         <div class="container">
           <h2 class="section-title">About Me</h2>
@@ -157,7 +148,6 @@
         </div>
       </section>
 
-      <!-- SKILLS SECTION -->
       <section
         id="skills"
         class="skills-section common-section animated-section"
@@ -172,7 +162,6 @@
         </div>
       </section>
 
-      <!-- PROJECTS SECTION -->
       <section
         id="projects"
         class="projects-section common-section animated-section"
@@ -180,7 +169,6 @@
         <div class="container">
           <h2 class="section-title">Projects</h2>
 
-          <!-- Filter Buttons -->
           <div class="portfolio-filter">
             <button class="filter-btn active" data-category="all">All</button>
             <button class="filter-btn" data-category="design">Design</button>
@@ -189,9 +177,7 @@
             </button>
           </div>
 
-          <!-- Portfolio Items -->
           <div class="portfolio-grid">
-            <!-- Design -->
             <div class="portfolio-item" data-category="design">
               <img
                 src="assets/img/1.jpg"
@@ -254,7 +240,6 @@
               </div>
             </div>
 
-            <!-- Photography -->
             <div class="portfolio-item" data-category="photography">
               <img
                 src="assets/img/1p.jpg"
@@ -292,7 +277,6 @@
         </div>
       </section>
 
-      <!-- CONTACT SECTION -->
       <section
         id="contact"
         class="contact-section common-section animated-section"
