@@ -566,10 +566,12 @@ body {
 @media (max-width: 768px) {
   .name {
     font-size: 2.8rem;
+    text-align: center;
   }
 
   .tagline {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .hero-section {
@@ -592,6 +594,7 @@ body {
 
   .greeting {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .social-links-container {
@@ -599,8 +602,8 @@ body {
   }
 
   .profile-image-container {
-    width: 18rem;
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
     margin-top: 1rem;
   }
 
