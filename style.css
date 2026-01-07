@@ -592,6 +592,10 @@ body {
     margin-top: 2rem;
   }
 
+   .hero-content-container {
+    margin-right: 15px;
+  }
+
   .greeting {
     font-size: 1.5rem;
     text-align: center;
