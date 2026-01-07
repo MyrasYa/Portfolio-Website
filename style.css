@@ -656,15 +656,24 @@ body {
 }
 
 @media (max-width: 480px) {
+
+  .greeting {
+    text-align: center;
+  }
+
   .name {
     font-size: 2.5rem;
+    text-align: center;
   }
   .tagline {
+    text-align: center;
     font-size: 1.1rem;
   }
   .profile-image-container {
-    width: 10rem;
-    height: 10rem;
+    position: relative;
+    left: 10px;
+    width: 13rem;
+    height: 13rem;
   }
   .hero-content {
     margin-top: 1.5rem;
