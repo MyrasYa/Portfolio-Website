@@ -319,14 +319,14 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: #1f2937;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-section .about-text {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   color: #374151;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 
